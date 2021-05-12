@@ -4,10 +4,12 @@ const $login = document.querySelector("#login")
 const $password = document.querySelector("#password")
 const $inputError = document.querySelector("#inputError")
 const $inputErrorPw = document.querySelector("#inputError2")
+const $btnEnviar = document.querySelector("#btnEnviar")
 
 
 function validateLogin(){
     const loginInput = $login.value
+    const valid = onclick="window.location.href=logged.html"
 
     if(loginInput === ''){
         $inputError.style.display = 'block';
@@ -19,6 +21,7 @@ function validateLogin(){
         $inputError.style.display = 'none';
         $login.style.border = '1px solid #979797';
         $login.style.marginBottom = '20px';
+        $btnEnviar = valid
         return true;
     }
 }
@@ -51,4 +54,4 @@ function validateForm(){
         return false
     }
     return false
-}
+} 
