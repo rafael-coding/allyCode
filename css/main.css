@@ -188,5 +188,9 @@ body{
     .enter-forgotpw button {
         height: 35px;
     }
+
+    .footer {
+        padding-top: 15px;
+    }
 }
 
