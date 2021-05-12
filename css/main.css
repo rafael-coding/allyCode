@@ -136,6 +136,7 @@ body{
     /*ajustando largura e jogando a flex column para responsividade*/
     .login-section {
         flex-direction: column;
+        height: 80vh;
     }
 
     .login-img figure{
@@ -153,6 +154,10 @@ body{
 }
 
 @media(max-width: 600px) {
+
+    .login-section {
+        height: 75vh;
+    }
     .login-img figure{
         width: 380px;
         height: 300px;
