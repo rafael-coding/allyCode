@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/raizen-img.png" type="image/x-icon">
+    <title>Raizen</title>
+</head>
+<body>
+
+    <!--section mostrando a imagem e o formulário-->
+    <section class="login-section">
+        <div class="login-img">
+            <figure>
+                <img src="./img/raizen2.jpg" alt="Raizen">
+            </figure>
+        </div>
+        <!--formulário-->
+        <div class="login-users">
+            <form class="login-form" onsubmit="validateForm(); return false">
+                <h3>Universidade</h3>
+                <div class="logo">
+                <figure>
+                    <img src="./img/raizen-logo.png" alt="Raizen-logo">
+                </figure>
+                </div>
+                <input type="text" autocomplete="off" placeholder="Login" id="login">
+                <p id="inputError" class="input-error">Este campo deve estar preenchido!</p>
+                <input type="text" autocomplete="off" placeholder="Senha" id="password">
+                <p id="inputError2" class="input-error">Este campo deve estar preenchido!</p>
+                    <div class="enter-forgotpw">
+                        <button href="#" >enviar</button>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+            </form>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+        <p>2021 © todos os direitos reservados - Teya.US</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

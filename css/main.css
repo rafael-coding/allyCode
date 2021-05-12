@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+/*tela de login, iniciando pelo desktop*/
+body{
+     width: 100%;
+     height: 100%;
+     background-color: #F1F1F1;
+}
+/* login section para dar (flex column)  quando entrar a responsividade */
+.login-section{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* imagem que ficará do lado do formulário */
+.login-img figure{
+    width: 542px;
+    height: 424px;
+}
+
+.login-img img{
+    border: 1px solid #863176;
+    width: 100%;
+    height: 100%;
+}
+/* iniciando o formulário*/
+.login-users{
+    display: flex;
+    width: 425px;
+    justify-content: center;
+    height: 424px;
+    border: 1px solid #863176;
+    background-color: #fff;
+}
+
+.login-users img{
+    width: 140px;
+    height: 58px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.login-form{
+    width: 73%;
+    margin: 0 auto;
+    display:block;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form h3{
+    color: #82008F;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 43px;
+}
+
+.login-form input{
+    height: 42px;
+    width: 100%;
+    padding-left: 19px;
+    margin-bottom: 30px;
+    border: 1px solid #82008F;
+}
+
+.login-form input:focus{
+    box-shadow: 0px 6px 6px #00000029;
+}
+
+.login-form ::-webkit-input-placeholder{
+    text-transform: uppercase;
+}
+/*input para validação do formuláro (JS) */
+.input-error{
+    color: red;
+    text-align: right;
+    display: none;
+}
+
+.enter-forgotpw{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.enter-forgotpw button{
+    width: 99px;
+    height: 42px;
+    background-color: #863176;
+    border: 1px solid #82008F;
+    color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.enter-forgotpw button:hover{
+    background-color: #ffff;
+    box-shadow: 0px 6px 6px #00000029;
+    color: #863176;
+    transition: 0.4s;
+}
+
+.enter-forgotpw a{
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*footer*/
+.footer{
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 16px;
+    margin-bottom: 31px;
+}
+
+
+/*------------- Responsivo tablet--------------- */
+@media(max-width: 1024px){
+    /*ajustando largura e jogando a flex column para responsividade*/
+    .login-section {
+        flex-direction: column;
+    }
+
+    .login-img figure{
+        width: 542px;
+    }
+
+    .login-users {
+        width: 542px;
+    }
+
+    .footer{
+        margin-bottom: 0px;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .login-img figure{
+        width: 380px;
+        height: 300px;
+    }
+
+    .login-users {
+        width: 380px;
+        height: 300px;
+    }
+
+    .login-form h3 {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .login-users img {
+        margin-top: 4px;
+        margin-bottom: 15px;
+        width: 125px;
+        height: 48px;
+    }
+
+    .login-form input {
+        margin-bottom: 20px;
+        height: 35px;
+    }
+
+    .enter-forgotpw button {
+        height: 35px;
+    }
+}
+
