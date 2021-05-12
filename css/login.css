@@ -128,12 +128,13 @@ body{
     color: #4A4A4A;
     font-size: 16px;
     margin-bottom: 31px;
+    bottom: 0;
 }
 
 
 /*------------- Responsivo tablet--------------- */
 @media(max-width: 1024px){
-    /*ajustando largura e jogando a flex column para responsividade*/
+    /*ajustando largura e jogando a flex column para responsividade, também tirando a vh do height*/
     .login-section {
         flex-direction: column;
         height: initial;
@@ -156,15 +157,10 @@ body{
 }
 
 @media(max-width: 600px) {
-
-    .login-section {
-        height: 75vh;
-    }
     .login-img figure{
         width: 380px;
         height: 300px;
         margin-top: 20px;
-
     }
 
     .login-users {
