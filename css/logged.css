@@ -12,8 +12,9 @@
     width: 100%;
     background-color: #ffff;
     height: 125px;
+    overflow: hidden;
 }
-
+/*nav com margin 0 auto pra sempre flotar no meio*/
 .nav{
     width: 1160px;
     margin: 0 auto;
@@ -32,7 +33,7 @@
     width: 100%;
     height: 100%;
 }
-
+/*notifications side*/
 .aside{
     display: flex;
     justify-content: space-between;
@@ -60,6 +61,11 @@
 .dissiminador-name .fas{
     font-size: 17px;
 }
+
+.dissiminador-name .fas:hover{
+    color: #E21683;
+}
+
 
 .notification{
     display: flex;
@@ -94,12 +100,285 @@
     font-weight: bold;
     font-size: 16px;
 }
-
+/*main section, vai segurar todo conteúdo do site, largura em porcentagem para o responsivo*/ 
 .main-section{
     width: 100%;
-    height: 900px;
     background-color: #F1F1F1;
     border-top: 1px solid #82008F;
-    border-bottom: 1px solid #863176;
+    border-bottom: 1px solid #82008F;
+}
+/* navbar em display none pare receber o onclick*/
+.navbar{
+    display: none;
 }
 
+.navbar a{
+    cursor: pointer;
+    color: #404040;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar .fas{
+    margin-left: 31px;
+    margin-right: 21px;
+}
+.navbar .far{
+    margin-left: 31px;
+    margin-right: 21px;
+}
+
+.home{
+    height: 55px;
+    display: flex;
+    background-color: #ffff;
+    color: #404040;
+    width: 241px;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+}
+
+.encontros{
+    height: 55px;
+    display: flex;
+    background-color: #ffff;
+    color: #404040;
+    width: 241px;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+}
+
+.agenda{
+    height: 55px;
+    display: flex;
+    background-color: #ffff;
+    color: #404040;
+    width: 241px;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+}
+
+.sair{
+    height: 55px;
+    display: flex;
+    background-color: #ffff;
+    color: #404040;
+    width: 241px;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+}
+/*hover da navbar*/
+.home:hover{
+    color: #E21683 ;
+}
+
+.encontros:hover{
+    color: #E21683;
+}
+
+.agenda:hover{
+    color: #E21683;
+}
+
+.sair:hover{
+    color: #E21683;
+}
+
+.navbar a:hover{
+    color: #E21683;
+}
+/*contúdo principal do site, jogando uma margin 0 auto para flotar sempre no meio*/
+.main-content{
+    width: 1160px;
+    margin: 0 auto;
+}
+/*linha do próximo encontro*/
+.next-meet{
+    margin-top: 47px;
+    margin-bottom: 27px;
+    color: #4A4A4A;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*div que vai segurar a sessão com data, nome e link da reunião (proximo encontro e encontro antigo)*/
+.meet-section{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.meet{
+    display: flex;
+    background-color: #82008F;
+    width: 770px;
+    height: 266px;
+}
+
+.meet-content{
+    display: flex;
+}
+
+.meet-data{
+    width: 164px;
+    text-align: center;
+    height: 100%;
+}
+
+.mes{
+    margin-top: 39px;    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.day{
+    color:#FC8304;
+    font-weight: normal;
+    font-size: 86px;
+}
+
+.hour{
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.meet-information{
+    width: 294px;
+    margin-right: 47px;
+}
+
+.perfil-meet{
+    margin-top: 39px;
+    margin-bottom: 17px;
+    height: 61px;
+    width: 61px;
+    border-radius: 100px;
+}
+
+.name-meet{
+    font-size: 32px;
+    text-transform: uppercase;
+     color: #FFFFFF;
+     font-weight: normal;
+}
+
+.name-meet span{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.meet-information p{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.meet-link{
+    height: 215px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.meet-link button{
+    width: 188px;
+    height: 42px;
+    background-color: #1FC2DF;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*sessão para os encontros antigos */
+.last-meet{
+    margin-left: 39px;
+    color: #4A4A4A;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.last-meet-data{
+    display: flex;
+}
+
+.last-data{
+    width: 110px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.mes-last-meet{
+    font-size: 14px;
+    color: #707070;
+}
+
+.day-last-meet{
+    font-size: 40px;
+    color: #E21683;
+}
+
+.hour-last-meet{
+    color: #000000;
+}
+
+.last-meet-data2{
+    display: flex;
+}
+
+.day-last-meet2{
+    font-size: 40px;
+    color: #FC8304;
+}
+
+/* linha desenhada para separa a data/hora do nome*/
+.line{
+    height: 22px;
+    margin-top: 86px;
+    margin-right: 18px;
+    background-color: #6B6B6B;
+    width: 1px;
+}
+
+.last-meet-information{
+    width: 150px;
+    margin-top: 35px;
+}
+
+.last-meet-information p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #404040;
+}
+
+.last-meet-information h4{
+    color: #4A4A4A;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.arrow .fas{
+    color: #E21683;
+    margin-right: 33px;
+    margin-left: 57px;
+    margin-top: 68px;
+    font-size: 21px;
+}
+
+/*parte desenhada para simular a barra lateral dos últimos encontro */
+
+.line-border1{
+    height: 78px;
+    margin-top: 55px;
+    width: 3px;
+    background-color: #82008F;
+    border-radius: 10px;
+}
+
+.line-border2{
+    width: 3px;
+    background-color: #E8E8E8;
+    height: 110px;
+}

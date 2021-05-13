@@ -12,13 +12,15 @@
     <title>Raizen</title>
 </head>
 <body>
+
+    <!--Header-->
     <header class="header">
         <div class="nav">
             <figure>
                 <img src="./img/logged/Universidade-Raizen.png" alt="logo Universidade-Raizen">
             </figure>
             <div class="aside">
-                <div class="dissiminador-name">
+            <div class="dissiminador-name">
                     <h4>Nome Disseminador</h4>
                     <button><i class="fas fa-arrow-down"></i></button>
                 </div>
@@ -30,9 +32,87 @@
                 </div>
         </div>
     </header>
-
     <main class="main-section">
+        <!--navbar em display none (onclick)-->
+        <nav class="navbar">
+            <div class="home">
+                <i class="fas fa-home"></i>
+                <a href="#home">Início</a>
+            </div>
+            <div class="encontros">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="#encontros">Próximos encontros</a>
+            </div>
+            <div class="agenda">
+                <i class="far fa-calendar-minus"></i>
+                <a href="#agenda">Minha agenda</a>
+            </div>
+            <div class="sair">
+                <i class="far fa-share-square"></i>
+                <a href="#sair">Sair</a>
+            </div>
+        </nav>
+        <!--sessão com a data, nome e link do encontro-->
+        <section class="main-content">
+            <h2 class="next-meet">Próximo encontro</h2>
+            <div class="meet-section">
+                <div class="meet">
+                    <div class="meet-content">
+                        <div class="meet-data">
+                            <h3 class="mes">jun</h3>
+                            <h2 class="day">16</h2>
+                            <h4 class="hour">14:00</h4>
+                        </div>
+                        <div class="meet-information">
+                            <img src="./img/logged/marcia.jpg" alt="Marina-perfil" class="perfil-meet">
+                            <h1 class="name-meet">Nome do <br> <span>Disseminador</span> </br> </h1>
+                            <p>#RH #Comportamento #Pessoas</p>
+                        </div>
+                        <div class="meet-link">
+                            <button>link da reunião</button>
+                        </div>
+                    </div>
+                </div>
 
+                <!--sessão dos últimos encontros-->
+                <div class="last-meet-section">
+                    <h2 class="last-meet">Encontros antigos</h2>
+                    <div class="last-meet-data">
+                        <div class="last-data">
+                            <p class="mes-last-meet">jun</p>
+                            <h4 class="day-last-meet">16</h2>
+                            <p class="hour-last-meet">09:00</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="last-meet-information">
+                            <p>Nome-Tutor</p>
+                            <h4>Nome do Disseminador</h4>
+                        </div>
+                        <div class="arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="last-meet-data2">
+                        <div class="last-meet-data">
+                            <div class="last-data">
+                                <p class="mes-last-meet">jun</p>
+                                <h4 class="day-last-meet2">08</h2>
+                                <p class="hour-last-meet">09:00</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="last-meet-information">
+                            <p>Nome-Tutor</p>
+                            <h4>Nome do Disseminador</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-border">
+                    <div class="line-border1"></div>
+                    <div class="line-border2"></div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
