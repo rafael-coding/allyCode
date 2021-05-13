@@ -64,6 +64,18 @@ const $navBar = document.querySelector("#navBar")
 const $iconChange = document.querySelector("#icon")
 const $closeNav = document.querySelector("#iconClose")
 
+/*elementos para dar hover no menu*/
+const $navHome = document.querySelector("#navHome")
+const $navEncontros = document.querySelector("#navEncontros")
+const $navAgenda = document.querySelector("#navAgenda")
+const $navSair = document.querySelector("#navSair")
+const $aHome = document.querySelector("#aHome")
+const $aEncontros = document.querySelector("#aEncontros")
+const $aAgenda = document.querySelector("#aAgenda")
+const $aSair = document.querySelector("#aSair")
+
+
+/* função para abrir e fechar o navbar */
 function dropNav(){
     $navBar.style.display = "block";
     $closeNav.style.display = "block";
@@ -74,4 +86,50 @@ function closeNav(){
     $navBar.style.display = "none";
     $closeNav.style.display = "none";
     $iconChange.style.display = 'block';
+}
+
+
+/*função para dar o hover nos itens da navbar */
+/*-----------------------hover no home */
+function hoverHome(){
+    $navHome.style.color = "#E21683";
+    $aHome.style.color = "#E21683";
+}
+
+function hoverOutHome(){
+    $navHome.style.color = "#404040";
+    $aHome.style.color = "#404040";
+}
+
+/*---------------------hover no Encontros */
+function hoverEncontros(){
+    $navEncontros.style.color = "#E21683";
+    $aEncontros.style.color = "#E21683";
+}
+
+function hoverOutEncontros(){
+    $navEncontros.style.color = "#404040";
+    $aEncontros.style.color = "#404040";
+}
+
+/*-------------------------hover no agenda */
+function hoverAgenda(){
+    $navAgenda.style.color = "#E21683";
+    $aAgenda.style.color = "#E21683";
+}
+
+function hoverOutAgenda(){
+    $navAgenda.style.color = "#404040";
+    $aAgenda.style.color = "#404040";
+}
+
+/*----------------------hover no sair */
+function hoverSair(){
+    $navSair.style.color = "#E21683";
+    $aSair.style.color = "#E21683";
+}
+
+function hoverOutSair(){
+    $navSair.style.color = "#404040";
+    $aSair.style.color = "#404040";
 }

@@ -26,21 +26,21 @@
                     <button onclick="closeNav()" id="iconClose" class="iconClose"><i class="fas fa-times"></i></button>
                     <!--navbar em display none (onclick)-->
                         <nav class="navbar" id="navBar">
-                            <div class="home">
+                            <div class="home" id="navHome" onmouseover="hoverHome()" onmouseout="hoverOutHome()">
                                 <i class="fas fa-home"></i>
-                                <a href="#home" id="homeMenu">Início</a>
+                                <a href="#home" id="aHome">Início</a>
                             </div>
-                            <div class="encontros">
+                            <div class="encontros" id="navEncontros" onmouseover="hoverEncontros()" onmouseout="hoverOutEncontros()">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <a href="#encontros">Próximos encontros</a>
+                                <a href="#encontros" id="aEncontros">Próximos encontros</a>
                             </div>
-                            <div class="agenda">
+                            <div class="agenda" id="navAgenda" onmouseover="hoverAgenda()" onmouseout="hoverOutAgenda()">
                                 <i class="far fa-calendar-minus"></i>
-                                <a href="#agenda">Minha agenda</a>
+                                <a href="#agenda" id="aAgenda">Minha agenda</a>
                             </div>
-                            <div class="sair">
+                            <div class="sair" id="navSair" onmouseover="hoverSair()" onmouseout="hoverOutSair()">
                                 <i class="far fa-share-square"></i>
-                                <a href="#sair">Sair</a>
+                                <a href="#sair" id="aSair">Sair</a>
                             </div>
                         </nav>
                 </div>

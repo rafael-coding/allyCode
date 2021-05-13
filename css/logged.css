@@ -125,6 +125,7 @@
 .navbar a{
     color: #404040;
     text-transform: uppercase;
+    width: 100%;
     text-decoration: none;
 }
 
@@ -142,6 +143,7 @@
     display: flex;
     background-color: #ffff;
     color: #404040;
+    cursor: pointer;
     width: 241px;
     align-items: center;
     border-bottom: 1px solid #707070;
@@ -152,6 +154,7 @@
     display: flex;
     background-color: #ffff;
     color: #404040;
+    cursor: pointer;
     width: 241px;
     align-items: center;
     border-bottom: 1px solid #707070;
@@ -162,6 +165,7 @@
     display: flex;
     background-color: #ffff;
     color: #404040;
+    cursor: pointer;
     width: 241px;
     align-items: center;
     border-bottom: 1px solid #707070;
@@ -172,30 +176,19 @@
     display: flex;
     background-color: #ffff;
     color: #404040;
+    cursor: pointer;
     width: 241px;
     align-items: center;
     border-bottom: 1px solid #707070;
 }
-/*hover da navbar*/
-.home:hover{
-    color: #E21683;
-}
-
-.encontros:hover{
-    color: #E21683;
-}
-
-.agenda:hover{
-    color: #E21683;
-}
-
-.sair:hover{
+/*hover da navbar
+.navbar .fas:hover{
     color: #E21683;
 }
 
 .navbar a:hover{
     color: #E21683;
-}
+} */
 /*contúdo principal do site, jogando uma margin 0 auto para flotar sempre no meio*/
 .main-content{
     width: 1160px;
