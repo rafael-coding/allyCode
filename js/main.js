@@ -73,6 +73,16 @@ const $aHome = document.querySelector("#aHome")
 const $aEncontros = document.querySelector("#aEncontros")
 const $aAgenda = document.querySelector("#aAgenda")
 const $aSair = document.querySelector("#aSair")
+const $agendar = document.querySelector("#agendar")
+const $agendar1 = document.querySelector("#agendar1")
+const $agendar2 = document.querySelector("#agendar2")
+const $agendar3 = document.querySelector("#agendar3")
+const $agendar4 = document.querySelector("#agendar4")
+const $agendar5 = document.querySelector("#agendar5")
+const $agendar6 = document.querySelector("#agendar6")
+const $agendar7 = document.querySelector("#agendar7")
+
+
 
 
 /* função para abrir e fechar o navbar */
@@ -87,6 +97,8 @@ function closeNav(){
     $closeNav.style.display = "none";
     $iconChange.style.display = 'block';
 }
+
+
 
 
 /*função para dar o hover nos itens da navbar */
@@ -132,4 +144,74 @@ function hoverSair(){
 function hoverOutSair(){
     $navSair.style.color = "#404040";
     $aSair.style.color = "#404040";
+}
+
+
+
+
+/*------hover para aparecer o agendamento nos cards -------- */
+/* estou separando os mouseovers por funcção (estudar fazer looping de divs, 8 cards é rápido, mais de 100 cards complica) */
+/* ----- onmouseouver perfil 0 --- */
+function hoverAgendar(){
+    $agendar.style.bottom = '0';
+}
+
+function hoverOutAgendar(){
+    $agendar.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 1 --- */
+function hoverAgendar1(){
+    $agendar1.style.bottom = '0';
+}
+
+function hoverOutAgendar1(){
+    $agendar1.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 2 --- */
+function hoverAgendar2(){
+    $agendar2.style.bottom = '0';
+}
+
+function hoverOutAgendar2(){
+    $agendar2.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 3 --- */
+function hoverAgendar3(){
+    $agendar3.style.bottom = '0';
+}
+
+function hoverOutAgendar3(){
+    $agendar3.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 4 --- */
+function hoverAgendar4(){
+    $agendar4.style.bottom = '0';
+}
+
+function hoverOutAgendar4(){
+    $agendar4.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 5 --- */
+function hoverAgendar5(){
+    $agendar5.style.bottom = '0';
+}
+
+function hoverOutAgendar5(){
+    $agendar5.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 6 --- */
+function hoverAgendar6(){
+    $agendar6.style.bottom = '0';
+}
+
+function hoverOutAgendar6(){
+    $agendar6.style.bottom = '-310px';
+}
+/* ----- onmouseouver perfil 7 --- */
+function hoverAgendar7(){
+    $agendar7.style.bottom = '0';
+}
+
+function hoverOutAgendar7(){
+    $agendar7.style.bottom = '-310px';
 }

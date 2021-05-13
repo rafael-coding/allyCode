@@ -433,6 +433,8 @@
     background-color: #ffff;
     display: flex;
     text-align: center;
+    overflow: hidden;
+    position: relative;
     align-items: center;
     flex-direction: column;
     margin-bottom: 45px;
@@ -470,6 +472,52 @@
     color: #5A1B5A;
     font-size: 14px;
 }
+
+/*seção do button agendar do card, vai iniciar escondido no overflow*/
+.agendarEncontro{
+    width: 257px;
+    height: 307px;
+    bottom: -310px;
+    background-color: #863176;
+    position: absolute;
+    transition: 0.5s;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agendarEncontro h3{
+    color:#FC8304 ;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.agendarEncontro p{
+    color:#ffff ;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.agendarEncontro span{
+    color:#ffff ;
+    width: 75%;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.agendarEncontro button{
+    color:#ffff ;
+    width: 188px;
+    height: 42px;
+    font-size: 14px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1FC2DF;
+    cursor: pointer;
+}
+
 
 /*button para mostrar mais cards*/
 .btn-more-cards{
