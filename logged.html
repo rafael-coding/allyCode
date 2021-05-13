@@ -22,7 +22,27 @@
             <div class="aside">
             <div class="dissiminador-name">
                     <h4>Nome Disseminador</h4>
-                    <button><i class="fas fa-arrow-down"></i></button>
+                    <button onclick="dropNav()" id="icon"><i class="fas fa-arrow-down"></i></button>
+                    <button onclick="closeNav()" id="iconClose" class="iconClose"><i class="fas fa-times"></i></button>
+                    <!--navbar em display none (onclick)-->
+                        <nav class="navbar" id="navBar">
+                            <div class="home">
+                                <i class="fas fa-home"></i>
+                                <a href="#home" id="homeMenu">Início</a>
+                            </div>
+                            <div class="encontros">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a href="#encontros">Próximos encontros</a>
+                            </div>
+                            <div class="agenda">
+                                <i class="far fa-calendar-minus"></i>
+                                <a href="#agenda">Minha agenda</a>
+                            </div>
+                            <div class="sair">
+                                <i class="far fa-share-square"></i>
+                                <a href="#sair">Sair</a>
+                            </div>
+                        </nav>
                 </div>
                 <div class="notification">
                     <button><i class="far fa-bell"></i></button>
@@ -30,28 +50,9 @@
                          <p>5</p>
                     </div>
                 </div>
-        </div>
+            </div>
     </header>
     <main class="main-section">
-        <!--navbar em display none (onclick)-->
-        <nav class="navbar">
-            <div class="home">
-                <i class="fas fa-home"></i>
-                <a href="#home">Início</a>
-            </div>
-            <div class="encontros">
-                <i class="fas fa-map-marker-alt"></i>
-                <a href="#encontros">Próximos encontros</a>
-            </div>
-            <div class="agenda">
-                <i class="far fa-calendar-minus"></i>
-                <a href="#agenda">Minha agenda</a>
-            </div>
-            <div class="sair">
-                <i class="far fa-share-square"></i>
-                <a href="#sair">Sair</a>
-            </div>
-        </nav>
         <!--seção com a data, nome e link do encontro-->
         <section class="main-content">
             <h2 class="next-meet">Próximo encontro</h2>
@@ -188,5 +189,6 @@
             <p>2021 © todos os direitos reservados - Teya.US</p>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

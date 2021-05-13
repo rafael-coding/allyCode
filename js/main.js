@@ -1,4 +1,6 @@
 
+
+/*-------------página de login----------*/
 //Elementos DOM Form
 const $login = document.querySelector("#login")
 const $password = document.querySelector("#password")
@@ -55,3 +57,22 @@ function validateForm(){
     }
     return false
 } 
+
+/*----------página logado ------------*/
+
+const $navBar = document.querySelector("#navBar")
+const $iconChange = document.querySelector("#icon")
+const $closeNav = document.querySelector("#iconClose")
+
+function dropNav(){
+    $navBar.style.top = "126px";
+    $closeNav.style.display = "block";
+    $iconChange.style.display = 'none';
+}
+
+function closeNav(){
+    $navBar.style.top = "-230px";
+    $closeNav.style.display = "none";
+    $iconChange.style.display = 'block';
+    $navBar.style.zIndex = '-1'
+}

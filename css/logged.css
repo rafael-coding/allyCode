@@ -42,6 +42,8 @@
 
 .dissiminador-name{
     display: flex;
+    width: 241px;
+    justify-content: flex-end;
 }
 
 .dissiminador-name h4{
@@ -60,6 +62,7 @@
 
 .dissiminador-name .fas{
     font-size: 17px;
+    margin-right: 10px;
 }
 
 .dissiminador-name .fas:hover{
@@ -105,16 +108,24 @@
     width: 100%;
     background-color: #F1F1F1;
     border-top: 1px solid #82008F;
+    z-index: -2;
+    position: relative;
     border-bottom: 1px solid #82008F;
 }
 /* navbar em display none pare receber o onclick*/
 .navbar{
-    display: none;
+    display: block;
+    top: -230px;
+    z-index: -1;
+    transition: 0.3s;
     position: absolute;
 }
 
+.iconClose{
+    display: none;
+}
+
 .navbar a{
-    cursor: pointer;
     color: #404040;
     text-transform: uppercase;
     text-decoration: none;
@@ -170,7 +181,7 @@
 }
 /*hover da navbar*/
 .home:hover{
-    color: #E21683 ;
+    color: #E21683;
 }
 
 .encontros:hover{
