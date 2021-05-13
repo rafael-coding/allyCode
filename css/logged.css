@@ -416,6 +416,146 @@
     padding-left: 19px;
 }
 
+/* tela que abrirá quando clicar no agendar do card */
+.meeting{
+    width: 1160px;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    height: 901px;
+    background-color: #F1F1F1;
+    transform: translateX(-50%);
+    bottom: 30%;
+    left: 50%;
+    border: 1px solid #707070;
+    text-align: right;
+}
+
+.metting-close{
+    font-size: 22px;
+    margin-right: 33px;
+    margin-top: 39px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.meeting button:hover{
+    color: #E21683;
+}
+
+.metting-content{
+    width: 1010px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.metting-content h2{
+    color: #4A4A4A;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.metting-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.metting-profile{
+    text-align: center;
+}
+
+.metting-profile img{
+    width: 113px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    height: 113px;
+    border-radius: 100px;
+}
+
+.metting-profile p{
+    color: #4A4A4A;
+    font-size: 14px;
+}
+
+.metting-profile i{
+    color: #FC8304;
+    font-size: 34px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.metting-information{
+    width: 377px;
+}
+
+.meet-span-name{
+    display: flex;
+    margin-top: 40px;
+}
+
+.metting-name{
+    font-size: 32px;
+    text-transform: uppercase;
+     color: #5A1B5A;
+     font-weight: normal;
+}
+
+.meet-span{
+    text-align: end;
+    color: #5A1B5A;
+    margin-top: 42px;
+}
+
+.metting-name span{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.metting-information p{
+    color: #82008F;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.metting-text p{
+    color: #4A4A4A;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.meeting-data{
+    width: 362px;
+    text-align: center;
+}
+
+.meeting-data img{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.btn-agendar{
+    width: 100%;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 49px;
+    background-color: #1FC2DF;
+}
+
+.show-data{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+}
+
+.show-data span{
+    font-weight: bold;
+}
+
 /* seção dos cards de agendamentos em grid para facilitar na responsividade */
 .scheduling{
     width: 1160px;
