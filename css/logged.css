@@ -110,6 +110,7 @@
 /* navbar em display none pare receber o onclick*/
 .navbar{
     display: none;
+    position: absolute;
 }
 
 .navbar a{
@@ -202,7 +203,7 @@
     text-transform: uppercase;
 }
 
-/*div que vai segurar a sessão com data, nome e link da reunião (proximo encontro e encontro antigo)*/
+/*div que vai segurar a seção com data, nome e link da reunião (proximo encontro e encontro antigo)*/
 .meet-section{
     display: flex;
     margin-bottom: 56px;
@@ -291,7 +292,7 @@
     font-size: 14px;
 }
 
-/*sessão para os encontros antigos */
+/*seção para os encontros antigos */
 .last-meet{
     margin-left: 39px;
     color: #4A4A4A;
@@ -381,4 +382,34 @@
     width: 3px;
     background-color: #E8E8E8;
     height: 110px;
+}
+
+/*seção do input search*/
+.search-section{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    height: 42px;
+    margin-bottom: 52px;
+    align-items: center;
+}
+
+.search-section h4{
+    text-transform: uppercase;
+    color: #4A4A4A;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.search-section .fas{
+    color: #5A1B5A;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.search-section input{
+    width: 783px;
+    height: 42px;
+    margin-left: 19px;
+    padding-left: 19px;
 }
