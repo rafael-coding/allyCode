@@ -12,7 +12,6 @@
     width: 100%;
     background-color: #ffff;
     height: 125px;
-    overflow: hidden;
 }
 /*nav com margin 0 auto pra sempre flotar no meio*/
 .nav{
@@ -108,16 +107,14 @@
     width: 100%;
     background-color: #F1F1F1;
     border-top: 1px solid #82008F;
-    z-index: -2;
     position: relative;
     border-bottom: 1px solid #82008F;
 }
 /* navbar em display none pare receber o onclick*/
 .navbar{
-    display: block;
-    top: -230px;
-    z-index: -1;
-    transition: 0.3s;
+    display: none;
+    top: 126px;
+    z-index: 1;
     position: absolute;
 }
 
@@ -202,6 +199,7 @@
 /*contúdo principal do site, jogando uma margin 0 auto para flotar sempre no meio*/
 .main-content{
     width: 1160px;
+    z-index: -2;
     margin: 0 auto;
 }
 /*linha do próximo encontro*/

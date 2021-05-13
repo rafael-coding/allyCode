@@ -65,14 +65,13 @@ const $iconChange = document.querySelector("#icon")
 const $closeNav = document.querySelector("#iconClose")
 
 function dropNav(){
-    $navBar.style.top = "126px";
+    $navBar.style.display = "block";
     $closeNav.style.display = "block";
     $iconChange.style.display = 'none';
 }
 
 function closeNav(){
-    $navBar.style.top = "-230px";
+    $navBar.style.display = "none";
     $closeNav.style.display = "none";
     $iconChange.style.display = 'block';
-    $navBar.style.zIndex = '-1'
 }
