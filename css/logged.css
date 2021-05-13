@@ -413,3 +413,77 @@
     margin-left: 19px;
     padding-left: 19px;
 }
+
+/* seção dos cards de agendamentos em grid para facilitar na responsividade */
+.scheduling{
+    width: 1160px;
+    margin: 0 auto;
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 70px;
+}
+
+.cards-scheduling{
+    width: 259px;
+    height: 368px;
+    border: 1px solid #82008F;
+    background-color: #ffff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+
+.cards-scheduling img{
+    width: 113px;
+    height: 113px;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    border-radius: 100px;
+}
+
+.cards-scheduling h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #82008F;
+    margin-bottom: 16px;
+}
+
+.cards-scheduling p{
+    color: #4A4A4A;
+    font-size: 14px;
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+.cards-scheduling .far{
+    color: #5A1B5A;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.cards-scheduling span{
+    color: #5A1B5A;
+    font-size: 14px;
+}
+
+/*button para mostrar mais cards*/
+.btn-more-cards{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-more-cards button{
+    width: 283px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #ffff;
+    background-color: #863176;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
