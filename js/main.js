@@ -81,8 +81,11 @@ const $agendar4 = document.querySelector("#agendar4")
 const $agendar5 = document.querySelector("#agendar5")
 const $agendar6 = document.querySelector("#agendar6")
 const $agendar7 = document.querySelector("#agendar7")
+const $closeMetting = document.querySelector("#mettingClose")
+const $showMetting = document.querySelector("#mettingShow")
+const $mettingSection = document.querySelector("#metting")
 
-
+/*listiners para pegar onclick em todos os buttons agendar */
 
 
 /* função para abrir e fechar o navbar */
@@ -214,4 +217,13 @@ function hoverAgendar7(){
 
 function hoverOutAgendar7(){
     $agendar7.style.bottom = '-310px';
+}
+
+/*----------função que irá dar display block na tela de agendamento */
+function showMetting(){
+    $mettingSection.style.display= "block"
+}
+
+function closeMetting(){
+    $mettingSection.style.display= "none"
 }

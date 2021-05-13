@@ -123,8 +123,8 @@
             </div>
         </div>
         <!--seção que vai abrir a tela para agendar o encontro, ela vai iniciar com display none-->
-            <div class="meeting">
-                <button class="metting-close"><i class="fas fa-times"></i></button>
+            <div class="meeting" id="metting">
+                <button class="metting-close" id="mettingClose" onclick="closeMetting()"><i class="fas fa-times"></i></button>
                 <div class="metting-content">
                     <h2>Próximo encontro</h2>
                     <div class="metting-section">
@@ -181,7 +181,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar1()" onmouseout="hoverOutAgendar1()">
@@ -194,7 +194,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar2()" onmouseout="hoverOutAgendar2()">
@@ -207,7 +207,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar3()" onmouseout="hoverOutAgendar3()">
@@ -220,7 +220,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar4()" onmouseout="hoverOutAgendar4()">
@@ -233,7 +233,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar5()" onmouseout="hoverOutAgendar5()">
@@ -246,7 +246,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar6()" onmouseout="hoverOutAgendar6()">
@@ -259,7 +259,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar7()" onmouseout="hoverOutAgendar7()">
@@ -272,7 +272,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button>agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="btn-more-cards">
