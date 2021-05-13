@@ -487,3 +487,25 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 227px;
+    background-color: #5A1B5A;
+}
+
+.rights{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    height: 187px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.rights p{
+    color: #FFFFFF;
+    font-size: 12px;
+    text-transform: uppercase;
+}
