@@ -28,6 +28,11 @@
     height: 58px;
 }
 
+/*essa logo irá aparecer somente na versão mobile*/
+.logo-mobile{
+    display: none;
+}
+
 .nav img{
     width: 100%;
     height: 100%;
@@ -950,7 +955,59 @@
 }
 
 /* responsivo mobile */
-@media(max-width: 700px){
+@media(max-width: 680px){
+    .nav {
+        width: 95%;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-mobile{
+        display: block;
+    }
+
+    .nav figure {
+        width: 150px;
+    }
+
+    .dissiminador-name {
+        flex-direction: column;
+        justify-content: center;
+        width: initial;
+    }
+
+    .dissiminador-name h4 {
+        font-size: 12px;
+    }
+
+    .notification {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: initial;
+    }
+
+    .alert-notification {
+        height: 15px;
+        width: 15px;
+        margin-left: 17px;
+        position: absolute;
+    }
+
+    .notification .far {
+        font-size: 22px;
+    }
+
+    .notification p {
+        font-size: 12px;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
     .next-meet {
         text-align: center;
         margin-top: 15px;
@@ -1007,4 +1064,47 @@
         display: block;
     }
 
+    .search-section {
+        width: 95%;
+    }
+
+    .input-search{
+        width: 100%;
+    }
+
+    .search-section input {
+        width: 95%;
+    }
+
+    .scheduling {
+        width: 100%;
+    }
+
+    .btn-more-cards {
+        width: 95%;
+    }
+
+    .rights {
+        width: 95%;
+    }
+    
+
+}
+
+/*resposivo dos cards em mobile para apenas uma coluna */
+@media(max-width: 650px){
+    .scheduling {
+        width: 80%;
+        column-gap: 0px;
+        grid-template-columns: 100%;
+    }
+
+    .cards-scheduling {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .agendarEncontro {
+        width: 100%;
+    }
 }
