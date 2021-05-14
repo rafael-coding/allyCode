@@ -84,10 +84,17 @@ const $agendar7 = document.querySelector("#agendar7")
 const $closeMetting = document.querySelector("#mettingClose")
 const $showMetting = document.querySelector("#mettingShow")
 const $mettingSection = document.querySelector("#metting")
-const $body = document.querySelector("#body")
 
-/*listiners para pegar onclick em todos os buttons agendar */
-
+/*listiners para pegar onclick em todos os buttons agendar 
+const $divAgendar = document.getElementsByClassName("agendarEncontro")
+console.log($divAgendar)
+const $agendar = document.getElementsByClassName("mettingShow")
+ for(let div of $agendar){
+     div.addEventListener('mouseover', hoverAgendar);
+     div.addEventListener('mouseout', hoverOutAgendar);
+     //for(let i = 0; i < $divAgendar.length; i ++)
+ }
+ */
 
 /* função para abrir e fechar o navbar */
 function dropNav(){

@@ -133,6 +133,9 @@
     margin-left: 31px;
     margin-right: 21px;
 }
+
+
+
 .navbar .far{
     margin-left: 31px;
     margin-right: 21px;
@@ -385,6 +388,15 @@
     background-color: #E8E8E8;
     height: 110px;
 }
+/*linha densenhada para virar block no mobile, para separa seçao*/
+.line-mobile{
+    height: 1px;
+    margin-top: 50px;
+    display: none;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #4A4A4A;
+}
 
 /*seção do input search*/
 .search-section{
@@ -435,6 +447,7 @@
 .metting-close{
     font-size: 22px;
     margin-right: 33px;
+    background-color: transparent;
     margin-top: 39px;
     cursor: pointer;
     color: #000000;
@@ -674,6 +687,7 @@
     text-transform: uppercase;
     color: #ffff;
     background-color: #863176;
+    margin-bottom: 129px;
     font-size: 14px;
     cursor: pointer;
     font-weight: bold;
@@ -699,4 +713,298 @@
     color: #FFFFFF;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+/*------------- Responsivo tablet--------------- */
+@media(max-width: 1200px){
+
+    .header {
+        height: 100px;
+    }
+
+    /*nav*/
+    .nav {
+        width: 800px;
+        height: 75px;
+    }
+
+    .navbar {
+        top: 101px;
+    }
+    
+    .notification button {
+        margin-left: 15px;
+    }
+
+    .nav figure {
+        width: 320px;
+        height: 54px;
+    }
+    /*próximos encontros e encontros antigos*/
+    .main-content {
+        width: 800px;
+    }
+
+    .meet-content {
+        flex-direction: column;
+        align-content: center;
+        width: 410px;
+        justify-content: center;
+    }
+
+    .meet {
+        height: initial;
+        width: 400px;
+    }
+
+    .meet-data {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mes {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    .day {
+        font-size: 60px;
+    }
+
+    .hour {
+        font-size: 18px;
+    }
+
+    .meet-information {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        margin-bottom: 30px;
+        margin-right: 0px; 
+        flex-direction: column;
+    }
+
+    .perfil-meet {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        margin-left: 175px;
+    }
+
+    .name-meet {
+        font-size: 22px;
+    }
+
+    .name-meet span {
+        font-size: 38px;
+    }
+
+    .meet-link {
+        height: initial;
+        display: flex;
+        margin-bottom: 14px;
+        justify-content: center;
+    }
+
+    .meet-link button {
+        width: 188px;
+        font-size: 14px;
+    }
+/*search*/
+.search-section {
+    width: 800px;
+    }
+    .search-section h4 {
+        font-size: 20px;
+    }
+
+    .search-section .fas {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .search-section input {
+        width: 468px;
+    }
+    /*cards mostrando os perfils*/
+    
+.scheduling {
+    width: 800px;
+    column-gap: 30px;
+    grid-template-columns: 30% 30% 30%;
+    }
+
+    .cards-scheduling {
+        margin-bottom: 10px;
+    }
+
+    .btn-more-cards {
+        width: 800px;
+    }
+
+    .footer {
+        height: 120px;
+    }
+
+    .rights {
+        width: 800px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+/*--------Responsivo tablet*/
+@media(max-width: 850px){
+    /*------nav*/
+    .nav {
+        width: 650px;
+    }
+
+    .nav figure {
+        width: 235px;
+        height: 50px;
+    }
+    .dissiminador-name h4 {
+        font-size: 15px;
+    }
+
+    .notification .far {
+        font-size: 22px;
+    }
+    
+    .alert-notification {
+        height: 24px;
+        width: 24px;
+    }
+
+    .notification p {
+        font-size: 15px;
+    }
+    
+    .main-content {
+        width: 650px;
+    }
+
+    .meet {
+        width: 330px;
+    }
+
+    .perfil-meet {
+        margin-left: 139px;
+    }
+
+    .last-meet {
+        margin-left: 5px;
+    }
+
+    .last-data {
+        width: 52px;
+    }
+
+    .line {
+        margin-right: 15px;
+        margin-left: 2px;
+    }
+
+    .arrow .fas {
+        margin-right: 33px;
+        margin-left: 45px;
+    }
+
+    .search-section {
+        width: 650px;
+    }
+
+    .search-section h4 {
+        font-size: 16px;
+    }
+
+    .search-section .fas {
+        font-size: 19px;
+    }
+
+    .search-section input {
+        width: 370px;
+        height: 37px;
+    }
+    /*cards dos perfils*/
+    .scheduling {
+        width: 650px;
+        column-gap: 10px;
+        grid-template-columns: 40% 40%;
+    }
+
+    .cards-scheduling {
+        margin-left: 63px;
+    }
+
+    .btn-more-cards {
+        width: 650px;
+    }
+
+    .rights {
+        width: 650px;
+    }
+}
+
+/* responsivo mobile */
+@media(max-width: 700px){
+    .next-meet {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .meet-section {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last-meet {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .arrow .fas {
+        display: none;
+    }
+
+    .last-data {
+        margin-top: 20px;
+    }
+
+    .line {
+        margin-top: 76px;
+    }
+
+    .last-meet-information {
+        margin-top: 25px;
+    }
+
+    .line-border{
+        display: none;
+    }
+
+    .search-section {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .search-section .fas {
+        display: none;
+    }
+
+    .search-section input {
+        margin-top: 15px;
+    }
+
+    .line-mobile{
+        display: block;
+    }
+
 }
