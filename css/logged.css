@@ -203,6 +203,11 @@
     z-index: -2;
     margin: 0 auto;
 }
+
+/*nome do disseminador do header em display none, irá ficar fora do header apenas na versão mobile*/
+.name-mobile{
+    display: none;
+}
 /*linha do próximo encontro*/
 .next-meet{
     margin-top: 47px;
@@ -971,7 +976,35 @@
     .nav figure {
         width: 150px;
     }
+    /*dando responsividade mobile para o nav bar */
+    .home {
+        width: 180px;
+    }
 
+    .encontros {
+        width: 180px;
+    }
+
+    .navbar .fas {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .agenda {
+        width: 180px;
+    }
+
+    .sair {
+        width: 180px;
+    }
+
+    .navbar .far {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    /*centralizando o conteúdo que mostra a próxima reunião e a reunião antiga*/
     .dissiminador-name {
         flex-direction: column;
         justify-content: center;
@@ -1093,6 +1126,23 @@
 
 /*resposivo dos cards em mobile para apenas uma coluna */
 @media(max-width: 650px){
+
+    .navbar {
+        margin-right: 54px;
+    }
+
+    .name-mobile {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .dissiminador-name {
+        flex-direction: inherit;
+        width: initial;
+    }
+
     .scheduling {
         width: 80%;
         column-gap: 0px;
@@ -1106,5 +1156,9 @@
 
     .agendarEncontro {
         width: 100%;
+    }
+
+    .dissiminador-name h4 {
+        display: none;
     }
 }

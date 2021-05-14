@@ -17,6 +17,7 @@
         <div class="nav">
             <figure>
                 <img src="./img/logged/Universidade-Raizen.png" alt="logo Universidade-Raizen" class="logo">
+                <!--uma logo que vai aparecer no mobile-->
                 <img src="./img/logged/Raizen.png" alt="raizen logo" class="logo-mobile">
             </figure>
             <div class="aside">
@@ -55,6 +56,8 @@
     <main class="main-section">
         <!--seção com a data, nome e link do encontro-->
         <section class="main-content">
+            <!--nome do disseminador que irá abrir fora do header para deixar o header limpo na versão mobile-->
+            <h2 class="name-mobile">Olá Nome do Disseminador</h2>
             <h2 class="next-meet">Próximo encontro</h2>
             <div class="meet-section">
                 <div class="meet">
@@ -182,7 +185,7 @@
                     <h3>Nome do <br>Disseminador</br></h3>
                     <p>#RH #Comportamento #Pessoas</p>
                     <span>Qui earum corrupti ut natus sint quo consequatur doloremque.</span>
-                    <button class="mettingShow">agendar</button>
+                    <button class="mettingShow" onclick="showMetting()">agendar</button>
                 </div>
             </div>
             <div class="cards-scheduling" onmouseover="hoverAgendar1()" onmouseout="hoverOutAgendar1()">
