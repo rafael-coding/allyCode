@@ -84,6 +84,7 @@ const $agendar7 = document.querySelector("#agendar7")
 const $closeMetting = document.querySelector("#mettingClose")
 const $showMetting = document.querySelector("#mettingShow")
 const $mettingSection = document.querySelector("#metting")
+const $body = document.querySelector("#body")
 
 /*listiners para pegar onclick em todos os buttons agendar */
 
@@ -221,7 +222,7 @@ function hoverOutAgendar7(){
 
 /*----------função que irá dar display block na tela de agendamento */
 function showMetting(){
-    $mettingSection.style.display= "block"
+    $mettingSection.style.display= "block";
 }
 
 function closeMetting(){

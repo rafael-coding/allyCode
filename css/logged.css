@@ -429,6 +429,7 @@
     left: 50%;
     border: 1px solid #707070;
     text-align: right;
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
 }
 
 .metting-close{
