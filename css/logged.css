@@ -442,12 +442,12 @@
 .meeting{
     width: 1160px;
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 3;
-    height: 901px;
+    height: 83vh;
     background-color: #F1F1F1;
     transform: translateX(-50%);
-    bottom: 20%;
+    top: 12%;
     left: 50%;
     border: 1px solid #707070;
     text-align: right;
@@ -553,8 +553,13 @@
     text-align: center;
 }
 
-.meeting-data img{
+.metting-calendar{
     width:100%;
+    margin-bottom: 20px;
+}
+
+.metting-data{
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -821,6 +826,13 @@
         width: 188px;
         font-size: 14px;
     }
+
+    /*seção que aparece quando se clica no botão agendar dos cards*/
+
+    .meeting {
+        width: 90%;
+    }
+
 /*search*/
 .search-section {
     width: 800px;
@@ -1161,4 +1173,22 @@
     .dissiminador-name h4 {
         display: none;
     }
+}
+
+/* responsividade de altura do seção para agendar, como display está fixed, o layout original vai vazar em telas abaixo de 1080p */
+@media(max-height: 900px){
+    .metting-close {
+        margin-top: 15px;
+    }
+
+    .metting-calendar {
+        height: 40%;
+        margin-bottom: 15px;
+    }
+
+    .metting-data {
+        height: 23%;
+        margin-bottom: 15px;
+    }
+
 }
