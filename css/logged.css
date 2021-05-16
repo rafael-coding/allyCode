@@ -554,6 +554,19 @@
     margin-bottom: 20px;
 }
 
+.open-calendar{
+    cursor: pointer;
+    width: 60%;
+    color: #ffff;
+    display: none;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 49px;
+    background-color: #1FC2DF;
+}
+
 .meeting-data{
     width: 362px;
     text-align: center;
@@ -1007,6 +1020,21 @@
         margin-left: 45px;
     }
 
+    /*seção de agendamento */
+    .meeting-data {
+        display: none;
+    }
+
+    .meeting-content-responsivo {
+        width: 100%;
+        align-items: center;
+    }
+
+    .meeting-content h2 {
+        text-align: center;
+    }
+
+
     .search-section {
         width: 650px;
     }
@@ -1022,6 +1050,10 @@
     .search-section input {
         width: 370px;
         height: 37px;
+    }
+
+    .open-calendar{
+        display: block;
     }
     /*cards dos perfils*/
     .scheduling {
@@ -1244,6 +1276,58 @@
 
     .dissiminador-name h4 {
         display: none;
+    }
+
+    /*seção de agendamento */
+    .meeting-profile img {
+        width: 90px;
+        margin-right: 20px;
+        height: 90px;
+    }
+
+    .meeting-profile {
+        margin-right: 50px;
+    }
+
+    .meeting-profile i {
+        margin-right: 15px;
+    }
+
+    .meeting-content h2 {
+        font-size: 21px;
+    }
+
+    .meeting-information {
+        margin-right: 15px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meet-span-name {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .meet-span {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .meeting-text p {
+        font-size: 16px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .open-calendar {
+        margin-bottom: 60px;
+        margin-top: 50px;
+    }
+
+    .meeting-information p {    
+        margin-bottom: 15px;
     }
 }
 
