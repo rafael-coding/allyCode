@@ -454,7 +454,7 @@
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
 }
 
-.metting-close{
+.meeting-close{
     font-size: 22px;
     margin-right: 33px;
     background-color: transparent;
@@ -467,29 +467,34 @@
     color: #E21683;
 }
 
-.metting-content{
+.meeting-content{
     width: 1010px;
     text-align: left;
     margin: 0 auto;
 }
 
-.metting-content h2{
+.meeting-content-responsivo{
+        display: flex;
+}
+
+.meeting-content h2{
     color: #4A4A4A;
     font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.metting-section{
+.meeting-section{
     display: flex;
     justify-content: space-between;
 }
 
-.metting-profile{
+.meeting-profile{
     text-align: center;
+    margin-right: 50px;
 }
 
-.metting-profile img{
+.meeting-profile img{
     width: 113px;
     margin-top: 40px;
     margin-bottom: 45px;
@@ -497,20 +502,21 @@
     border-radius: 100px;
 }
 
-.metting-profile p{
+.meeting-profile p{
     color: #4A4A4A;
     font-size: 14px;
 }
 
-.metting-profile i{
+.meeting-profile i{
     color: #FC8304;
     font-size: 34px;
     width: 100%;
     margin-top: 30px;
 }
 
-.metting-information{
+.meeting-information{
     width: 377px;
+    margin-right: 106px;
 }
 
 .meet-span-name{
@@ -518,7 +524,7 @@
     margin-top: 40px;
 }
 
-.metting-name{
+.meeting-name{
     font-size: 32px;
     text-transform: uppercase;
      color: #5A1B5A;
@@ -531,18 +537,18 @@
     margin-top: 42px;
 }
 
-.metting-name span{
+.meeting-name span{
     font-size: 44px;
     font-weight: bold;
 }
 
-.metting-information p{
+.meeting-information p{
     color: #82008F;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.metting-text p{
+.meeting-text p{
     color: #4A4A4A;
     font-size: 22px;
     margin-bottom: 20px;
@@ -551,15 +557,18 @@
 .meeting-data{
     width: 362px;
     text-align: center;
-}
-
-.metting-calendar{
-    width:100%;
     margin-bottom: 20px;
 }
 
-.metting-data{
+.meeting-data-hour{
     width: 100%;
+    height: 25%;
+    margin-bottom: 42px;
+}
+
+.meeting-calendar{
+    width:100%;
+    height: 48%;
     margin-bottom: 20px;
 }
 
@@ -832,6 +841,69 @@
     .meeting {
         width: 90%;
     }
+
+    .metting-section {
+        display: flex;
+        justify-content: initial;
+    }
+
+    .meeting-close {
+        margin-top: 20px;
+    }
+
+    .meeting-content-responsivo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meeting-content {
+        width: 90%;
+    }
+
+    .meeting-content h2 {
+        margin-bottom: 15px;
+    }
+
+    .meeting-profile p {
+        display: none;
+    }
+
+    .meeting-profile {
+        text-align: center;
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .meeting-profile img {
+        margin-top: 0px; 
+        margin-right: 50px;
+        margin-bottom: 0px; 
+    }
+
+    .meeting-profile i {
+        width: initial;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    .meeting-information {
+        margin-right: 15px;
+    }
+
+    .meeting-name {
+        font-size: 30px;
+    }
+
+    .meeting-name span {
+        font-size: 40px;
+    }
+
+    .meeting-text p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
 
 /*search*/
 .search-section {
@@ -1176,19 +1248,24 @@
 }
 
 /* responsividade de altura do seção para agendar, como display está fixed, o layout original vai vazar em telas abaixo de 1080p */
-@media(max-height: 900px){
+@media(max-height: 950px){
+
     .metting-close {
         margin-top: 15px;
     }
 
-    .metting-calendar {
-        height: 40%;
-        margin-bottom: 15px;
+    .meeting-data {
+        margin-bottom: 20px; 
     }
 
-    .metting-data {
-        height: 23%;
-        margin-bottom: 15px;
+    .meeting-calendar {
+        height: 35%;
+        margin-bottom: 20px;
+    }
+
+    .meeting-data-hour {
+        height: 20%;
+        margin-bottom: 20px;
     }
 
 }

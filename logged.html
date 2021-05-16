@@ -128,20 +128,21 @@
         </div>
         <!--seção que vai abrir a tela para agendar o encontro, ela vai iniciar com display none-->
             <div class="meeting" id="metting">
-                <button class="metting-close" id="mettingClose" onclick="closeMetting()"><i class="fas fa-times"></i></button>
-                <div class="metting-content">
+                <button class="meeting-close" id="mettingClose" onclick="closeMetting()"><i class="fas fa-times"></i></button>
+                <div class="meeting-content">
                     <h2>Próximo encontro</h2>
-                    <div class="metting-section">
-                        <div class="metting-profile">
+                    <div class="meeting-section">
+                      <div class="meeting-content-responsivo">
+                        <div class="meeting-profile">
                             <img src="./img/logged/carol.jpg" alt="carol-profile">
                             <p>conecte</p>
                             <a href="#whatsapp"><i class="fab fa-whatsapp"></i></a>
                             <a href="#email"><i class="fas fa-at"></i></a>
                             <a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <div class="metting-information">
+                        <div class="meeting-information">
                             <div class="meet-span-name">
-                                <h1 class="metting-name">Nome do <br> <span>Disseminador</span> </br> </h1>
+                                <h1 class="meeting-name">Nome do <br> <span>Disseminador</span> </br> </h1>
                                 <div class="meet-span">
                                     <i class="far fa-star"></i>
                                     <span>4,8</span>
@@ -149,14 +150,14 @@
                             </div>
                             <p>#RH #Comportamento #Pessoas</p>
 
-                            <div class="metting-text">
+                            <div class="meeting-text">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elite, 
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                      Nunc sed velit dignissim sodales. Sed adipiscing diam donec adipiscing.
                                 </p>
                             </div>
-                            <div class="metting-text">
+                            <div class="meeting-text">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elite, 
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -164,9 +165,11 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
                         <div class="meeting-data">
-                            <img src="./img/logged/calendario.png" alt="calendario" class="metting-calendar">
-                            <img src="./img/logged/data.png" alt="data" class="metting-data">
+                            <!--pesquisar em como fazer um calendário-->
+                            <img src="./img/logged/calendario.png" alt="calendario" class="meeting-calendar">
+                            <img src="./img/logged/data.png" alt="data" class="meeting-data-hour">
                             <button class="btn-agendar">Agendar encontro</button>
                             <p class="show-data">dia <span>22/12/2020 </span> das <span>09:00</span> até <span>10:00</span> </p>
                         </div>
