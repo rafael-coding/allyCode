@@ -1054,6 +1054,7 @@
 
     .open-calendar{
         display: block;
+        margin-top: 25px;
     }
     /*cards dos perfils*/
     .scheduling {
@@ -1279,6 +1280,12 @@
     }
 
     /*seção de agendamento */
+
+    .meeting {
+        height: 90vh;
+        top: 5%;
+    }
+
     .meeting-profile img {
         width: 90px;
         margin-right: 20px;
@@ -1295,6 +1302,7 @@
 
     .meeting-content h2 {
         font-size: 21px;
+        margin-bottom: 10px;
     }
 
     .meeting-information {
@@ -1306,13 +1314,17 @@
     }
 
     .meet-span-name {
-        margin-top: 30px;
+        margin-top: 15px;
         flex-direction: column;
+    }
+
+    .meeting-name span {
+        font-size: 38px;
     }
 
     .meet-span {
         text-align: center;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .meeting-text p {
@@ -1323,11 +1335,16 @@
 
     .open-calendar {
         margin-bottom: 60px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .meeting-information p {    
         margin-bottom: 15px;
+    }
+
+    .meeting-close {
+        margin-top: 10px;
+        margin-right: 15px;
     }
 }
 
