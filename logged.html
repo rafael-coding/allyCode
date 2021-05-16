@@ -165,11 +165,12 @@
                                 </p>
                             </div>
 
-                            <button class="open-calendar">Abrir agenda</button>
+                            <button class="open-calendar" onclick="openCalendar()">Abrir agenda</button>
                         </div>
                     </div>
-                        <div class="meeting-data">
+                        <div class="meeting-data" id="mettingData">
                             <!--pesquisar em como fazer um calendário-->
+                            <button class="meeting-close-calendar" id="mettingClose" onclick="closeCalendar()"><i class="fas fa-times"></i></button>
                             <img src="./img/logged/calendario.png" alt="calendario" class="meeting-calendar">
                             <img src="./img/logged/data.png" alt="data" class="meeting-data-hour">
                             <button class="btn-agendar">Agendar encontro</button>

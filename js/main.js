@@ -84,6 +84,7 @@ const $agendar7 = document.querySelector("#agendar7")
 const $closeMetting = document.querySelector("#mettingClose")
 const $showMetting = document.querySelector("#mettingShow")
 const $mettingSection = document.querySelector("#metting")
+const $mettingData = document.querySelector("#mettingData")
 
 /*listiners para pegar onclick em todos os buttons agendar 
 const $divAgendar = document.getElementsByClassName("agendarEncontro")
@@ -234,4 +235,14 @@ function showMetting(){
 
 function closeMetting(){
     $mettingSection.style.display= "none"
+}
+
+/* função para abrir o calendário na versão mobile que estará em display none */
+
+function openCalendar(){
+    $mettingData.style.display="block"
+}
+
+function closeCalendar(){
+    $mettingData.style.display="none"
 }
