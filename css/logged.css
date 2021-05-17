@@ -463,6 +463,10 @@
     color: #000000;
 }
 
+.meeting-close-calendar{
+    display: none;
+}
+
 .meeting button:hover{
     color: #E21683;
 }
@@ -1042,11 +1046,12 @@
     .meeting-close-calendar{
         position: absolute;
         font-size: 22px;
+        display: block;
         background-color: transparent;
         cursor: pointer;
         color: #646464;
         margin-top: 30px;
-    left: 85%;
+        left: 85%;
     }
 
     .meeting-data-hour {
